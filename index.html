@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/website icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Notes App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <h1>Notes App</h1>
+                    <p>Simple and Easy notes</p>
+                </div>
+            </div>
+            
+            <div class="actions">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-6">
+                            <input type="text" id="search-text" placeholder="Filter Notes" class="form-control"/>
+                        </div>
+            
+                        <div class="col-sm-3 col-6">
+                            <select id="filter-by" class="form-control">
+                                <option value="byEdited">Sort by last edited</option>
+                                <option value="byCreated">Sort by recently created</option>
+                                <option value="byAlphabetical">Sort alphabetically</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-5 col-12">
+                            <button id="create-note" class="btn btn-primary">Create Note</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="notes"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-10">
+                        <p>Designed and Developed by Bushan Sirgur (c) <a href="https://bushansirgur.in">B2 Tech</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/moment-with-locales.min.js"></script>
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/notes-functions.js"></script>
+        <script src="scripts/notes-app.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+div.header{
+    background-color: #487EB0;
+    height: 100px;
+    color: white;
+    padding: 10px;
+}
+
+div.actions{
+    background-color: #DAE0E2;
+    height: 75px;
+    color: white;
+    padding: 20px;
+}
+
+a{
+    font-size: 20px;
+    color: black;
+}
+
+span#last-edited{
+    color: black;
+    float: right;
+    font-size: 20px;
+}
+
+div.main-content{
+    margin-top: 10px;
+}
+
+.empty-message{
+    text-align: center;
+    margin: 3.2rem;
+    font-size: 25px;
+}
+
+.list-item{
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #eeeeee;
+    text-decoration: none;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#create-note{
+    float: right;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    div.actions{
+        height: 125px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #create-note{
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+    span#last-edited{
+        float: left;
+        margin-top: 20px;
+    }
+}
+
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+.content{
+    padding-bottom: 100px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    background-color: #487EB0;
+    color: white;
+    width: 100%;
+}
